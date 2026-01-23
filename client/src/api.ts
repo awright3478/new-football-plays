@@ -5,10 +5,10 @@ const API_BASE_URL = 'http://localhost:5000/api';
 export async function fetchPlays() {
   try {
     const response = await axios.get(`${API_BASE_URL}/plays`);
-    return response.data;
+    return response.data || [];
   } catch (error) {
     console.error('Error fetching plays:', error);
-    throw error;
+    return [];
   }
 }
 

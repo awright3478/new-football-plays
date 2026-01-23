@@ -1,0 +1,50 @@
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.plays-list {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.play-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease;
+}
+
+.play-item:last-child {
+  border-bottom: none;
+}
+
+.play-item:hover {
+  background: #f9f9f9;
+}
+
+.play-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.play-info p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.play-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.play-actions button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
