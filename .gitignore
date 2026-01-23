@@ -1,0 +1,32 @@
+# API
+api/bin/
+api/obj/
+api/.vs/
+api/appsettings.*.json
+
+# Client
+client/node_modules/
+client/dist/
+client/.env
+client/.env.local
+
+# Workspace
+workspace/node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
