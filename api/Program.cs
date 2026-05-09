@@ -1,5 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure PostgreSQL database connection
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 // Add services to the container
 builder.Services.AddControllers();
 builder.Services.AddCors(options =>
